@@ -4,8 +4,9 @@
   "description": "boilerplate",
   "main": "app/index.jsx",
   "scripts": {
-    "dev": "webpack-dev-server --devtool eval --progress --hot --colors --content-base build --history-api-fallback",
+    "dev": "webpack-dev-server --devtool eval --progress --hot --colors --content-base build --history-api-fallback --port 3000",
     "build": "npm run clean && webpack --progress --color --config webpack.prod.config.js",
+    "build2":"webpack --progress --color --config webpack.prod.config.js",
     "clean": "rm -rf build"
   },
   "repository": {
